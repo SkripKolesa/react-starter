@@ -1,0 +1,20 @@
+@use 'styles/fonts' as fonts;
+@use 'styles/responsive' as responsive;
+@import 'styles/reset.scss';
+
+html {
+  font-size: fonts.$html-font-size-px;
+  @include responsive.for(tablets) {
+    font-size: fonts.$html-font-size * fonts.$html-font-factor + px;
+  }
+  @include responsive.for(phones) {
+    font-size: fonts.$html-font-size * fonts.$html-font-factor* fonts.$html-font-factor + px;
+  }
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
