@@ -37,6 +37,7 @@ module.exports = {
         semi: ['off'],
         'object-curly-spacing': ['off'],
         'space-before-function-paren': ['off'],
+        'react/react-in-jsx-scope': ['off'],
       }
     }
   ],
