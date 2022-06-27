@@ -1,12 +1,13 @@
 import * as React from 'react';
 import styles from './Hello.module.scss';
+import {BaseEntity} from "@/types";
 
-export type HelloProps = {
+export type HelloProps = BaseEntity & {
   name: string
-}
+};
 
 export const Hello = ({name}: HelloProps): JSX.Element => {
   return (
-      <div> Hello, {name}!</div>
+      <div className = {styles.test}> Hello, {name}!</div>
   )
 }
