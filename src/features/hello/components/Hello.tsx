@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styles from './Hello.module.scss';
-import {BaseEntity} from "@/types";
+import {BaseEntity} from '@/types';
 
 export type HelloProps = BaseEntity & {
   name: string
